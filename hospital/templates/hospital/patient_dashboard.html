@@ -1,0 +1,17 @@
+{% extends 'hospital/base.html' %}
+
+{% block title %}My Dashboard - MediTrack{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>My Dashboard</h1>
+    <h3>My Appointments</h3>
+    <ul>
+        {% for appointment in appointments %}
+            <li>{{ appointment.doctor }} on {{ appointment.appointment_date }}</li>
+        {% empty %}
+            <li>No appointments found.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

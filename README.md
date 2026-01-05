@@ -105,3 +105,6 @@ This project is for educational purposes and open for learning and development.
 
 Project maintained by Bishal Sr
 GitHub: https://github.com/Bishalsr
+
+Screenshots:
+Ss/Screenshot 2026-01-05 114523.png

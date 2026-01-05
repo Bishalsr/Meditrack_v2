@@ -106,7 +106,4 @@ This project is for educational purposes and open for learning and development.
 Project maintained by Bishal Sr
 GitHub: https://github.com/Bishalsr
 
-## 📸 Screenshots
 
-### Home Page
-![SS](Ss/s2.png)

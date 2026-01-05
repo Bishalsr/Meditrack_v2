@@ -66,7 +66,7 @@ def appointment_list(request):
         doctor = Doctor.objects.filter(user=user).first()
         appointments = Appointment.objects.filter(doctor=doctor)
     else:
-        # Patients should not access this page
+        
         return redirect('patient_dashboard')
 
     return render(request, 'hospital/appointment_list.html', {'appointments': appointments})
@@ -105,9 +105,9 @@ def patient_dashboard(request):
 def landing_page(request):
     if request.user.is_authenticated:
         if request.user.is_staff:
-            return redirect('home')  # Staff dashboard
+            return redirect('home')  
         else:
-            return redirect('patient_dashboard')  # Patient dashboard
+            return redirect('patient_dashboard')  
 
     context = {
         'hospital_name': 'MediTrack Hospital',
